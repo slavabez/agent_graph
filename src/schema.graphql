@@ -1,5 +1,5 @@
 type Query {
-  hello: String
+  allReports: [Report]
 }
 
 type Report {
@@ -13,7 +13,7 @@ type Report {
   time: String
   # Kokshetau, Kostanai or Petropavl
   city: String
-  filename: String
+  folder: String
   agentName: String
-  tag: String
+  tags: [String]
 }

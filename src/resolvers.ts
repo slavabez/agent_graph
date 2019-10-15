@@ -1,6 +1,15 @@
+import { config } from "dotenv";
+import FtpHelper from "./FtpHelper";
+
+config();
+
+const fth = new FtpHelper();
+
 const resolvers = {
   Query: {
-    hello: () => `Hello world!`
+    allReports: async () => {
+      return await fth.fetchFileList();
+    }
   }
 };
 

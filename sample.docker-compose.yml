@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+  backend:
+    container_name: agent_graph
+    image: slavalab/agent_graph
+    environment:
+      FTP_HOST: "address"
+      FTP_PORT: "21"
+      FTP_USER: "user"
+      FTP_PASSWORD: "password"
+    ports:
+      - "4000:4000"
+

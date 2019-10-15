@@ -1,0 +1,19 @@
+type Query {
+  hello: String
+}
+
+type Report {
+  # Unique ID randomly generated
+  id: ID!
+  # 1 - To, 2 - From
+  type: Int
+  # File size in bytes
+  size: Int
+  # Timestamp
+  time: String
+  # Kokshetau, Kostanai or Petropavl
+  city: String
+  filename: String
+  agentName: String
+  tag: String
+}
